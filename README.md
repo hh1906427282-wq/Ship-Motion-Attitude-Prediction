@@ -13,31 +13,21 @@ The model jointly predicts **position, velocity, and acceleration** of 6-DoF shi
 
 ```
 
-.
-├── dataset.py
-│   └── Data loading, normalization, sliding-window construction
-├── cnn_bilstm.py
-│   └── Multi-scale CNN + MI-BiLSTM branch
-├── transformer.py
-│   └── Transformer encoder branch
-├── fusion.py
-│   └── FusionGate for adaptive dual-branch fusion
-├── multi_head.py
-│   └── Multi-task output heads (position / velocity / acceleration)
-├── predictor.py
-│   └── Complete prediction model (two branches + fusion + heads)
-├── train.py
-│   └── Model training (Adam optimizer, early stopping)
-├── test.py
-│   └── Sliding-window inference, evaluation, visualization
-├── checkpoints/
-│   └── best_model.pth
-├── loss_figs/
-│   └── train_loss_curve.png
-├── figures/
-│   └── *.png
-├── scaler_cnn_bilstm_attention.save
-├── test_input_data.npy
+├── data/
+│ ├── dataset.py # Dataset loading, normalization, sliding window construction
+│ ├── train.csv # Training dataset (normalized after processing)
+│ ├── test.csv # Test dataset (normalized after processing)
+│ └── 五级海况.csv # Original raw data (sea state level 5)
+│
+├── model/
+│ ├── cnn_bilstm.py # Multi-scale CNN + MI-BiLSTM branch
+│ ├── transformer.py # Transformer encoder branch
+│ ├── fusion.py # FusionGate for dual-branch feature fusion
+│ ├── multi_head.py # Multi-task output heads (pos / vel / acc)
+│ ├── predictor.py # Complete prediction model
+│ ├── train.py # Training script
+│ └── test.py # Testing and evaluation script
+│
 └── README.md
 
 ````
