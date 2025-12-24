@@ -1,22 +1,6 @@
 # Ship-Motion-Attitude-Prediction
 A Multi-Scale and Temporal Dependency-Aware Deep Learning Framework for Multi-Task Ship Motion Attitude Prediction
-好，我**一次性把所有需要的内容都给你**，整理成一个**完整、规范、可直接复制的 `README.md`**，**包含**：
 
-* ✅ 完整文件结构
-* ✅ 环境与依赖
-* ✅ 数据格式
-* ✅ 模型结构说明
-* ✅ 训练与测试流程
-* ✅ 评估指标定义（与代码一致）
-* ✅ 超参数表（Reproducibility）
-* ✅ 可复现性说明
-* ✅ Citation 模板
-
-你**整块复制**，直接放到仓库根目录即可，不需要再改。
-
----
-
-```markdown
 # Multi-Scale CNN–MI-BiLSTM–Transformer with FusionGate  
 ## Multi-task Ship Motion & Attitude Prediction (6DoF)
 
